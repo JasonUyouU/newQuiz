@@ -5,8 +5,8 @@
 }
 #question {
   display: inline-block;
-  width: 200px;
-  height: 50px;
+  width: 450px;
+  height: 80px;
   background-color: tomato;
   position: relative;
 }
@@ -23,11 +23,41 @@
 }
 
 #question::before {
-  left: -25px;
-  border-width: 25px 25px 25px 0;
+  left: -40px;
+  border-width: 40px 40px 40px 0;
 }
 
 #question::after {
+  right: -40px;
+  border-width: 40px 0 40px 40px;
+}
+#answers {
+  width: 80%;
+  margin: 30px auto;
+}
+.answer {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin: 20px 30px;
+  background-color: tomato;
+  position: relative;
+}
+.answer::before,
+.answer::after {
+  content: "";
+  border-style: solid;
+  border-width: 0;
+  height: 0;
+  position: absolute;
+  width: 0;
+  border-color: transparent tomato;
+}
+.answer::before {
+  left: -25px;
+  border-width: 25px 25px 25px 0;
+}
+.answer::after {
   right: -25px;
   border-width: 25px 0 25px 25px;
 }
