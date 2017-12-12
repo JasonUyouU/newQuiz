@@ -1,18 +1,19 @@
+/*Styling to give the border shape of the questions and answers*/
 #qAndA {
   text-align: center;
   width: 80%;
   margin: 50px auto;
 }
-#question {
+.question {
   display: inline-block;
   width: 450px;
   height: 80px;
   background-color: tomato;
   position: relative;
+  font-size: 40px;
 }
-
-#question::before,
-#question::after {
+.question::before,
+.question::after {
   content: "";
   border-style: solid;
   border-width: 0;
@@ -22,16 +23,16 @@
   border-color: transparent tomato;
 }
 
-#question::before {
+.question::before {
   left: -40px;
   border-width: 40px 40px 40px 0;
 }
 
-#question::after {
+.question::after {
   right: -40px;
   border-width: 40px 0 40px 40px;
 }
-#answers {
+.answers {
   width: 80%;
   margin: 30px auto;
 }
@@ -60,4 +61,7 @@
 .answer::after {
   right: -25px;
   border-width: 25px 0 25px 25px;
+}
+.hidden {
+  display: none !important;
 }
