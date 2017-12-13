@@ -1,6 +1,24 @@
-document.querySelector(".answer").addEventListener("click", function(){
+$("#correct1").click(function(){
   $("#question1").addClass("hidden");
   $("#answers1").addClass("hidden");
   $("#question2").removeClass("hidden");
   $("#answers2").removeClass("hidden");
+})
+$("#correct2").click(function(){
+  $("#question2").addClass("hidden");
+  $("#answers2").addClass("hidden");
+  $("#question3").removeClass("hidden");
+  $("#answers3").removeClass("hidden");
+})
+$("#correct3").click(function(){
+  $("#question3").addClass("hidden");
+  $("#answers3").addClass("hidden");
+  $("#question4").removeClass("hidden");
+  $("#answers4").removeClass("hidden");
+})
+$("#correct4").click(function(){
+  $("#question4").addClass("hidden");
+  $("#answers4").addClass("hidden");
+  $("#question5").removeClass("hidden");
+  $("#answers5").removeClass("hidden");
 })
