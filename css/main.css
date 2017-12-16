@@ -3,11 +3,26 @@ body {
   margin: 0;
   background-image: url("../img/starbg.png")
 }
+#winnings {
+  width: 60%;
+  height: 500px;
+  margin: 50px auto;
+  background-color: #010e61;
+  border: 2px #187be0 solid;
+  color: #ffb344;
+}
+#winnings h1 {
+  margin: 30px 0;
+}
+#numbers {
+  width: 35%;
+  margin: 0 auto;
+}
 #qAndA {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 620px;
+  margin-top: 100px;
 }
 /*Styling to give the border shape of the questions and answers*/
 .question {
@@ -18,8 +33,6 @@ body {
   text-align: auto;
   vertical-align: top;
   background-color: #010e61;
-  /* border-top: 3px solid #60b8f7;
-  border-bottom: 3px solid #60b8f7; */
   color: white;
   -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
   clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
@@ -36,8 +49,6 @@ body {
   vertical-align: top;
   display: inline-block;
   background-color: #010e61;
-  /* border-top: 3px solid #60b8f7;
-  border-bottom: 3px solid #60b8f7; */
   color: white;
   text-align: left;
   -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
@@ -58,17 +69,23 @@ p {
   font-size: 17px;
 }
 .letters {
-  color: #ee8722
+  color: #ffb344;
 }
 .hidden {
   display: none !important;
 }
-@media (min-width: 1295px) {
+@media (min-width: 1270px) {
+  #winnings {
+    width: 48%;
+  }
   #qAndA {
     width: 60%;
   }
 }
-@media (min-width: 1719px) {
+@media (min-width: 1700px) {
+  #winnings {
+    width: 35%;
+  }
   #qAndA {
     width: 50%;
   }
