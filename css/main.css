@@ -1,35 +1,13 @@
-html {
-  overflow: hidden;
-  height: auto;
-}
 body {
-  height: auto;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(350deg);
-  }
-}
-.background {
-  position: absolute;
-  z-index: -1;
-  background-image: url("../img/starbg.png");
-  width: 400vw;
-  height: 500vh;
-  top: 50%;
-  left: 50%;
-  margin-top: -200vh;
-  margin-left: -200vw;
-  animation: spin 240s linear infinite;
+  height: 100%;
+  margin: 0;
+  background-image: url("../img/starbg.png")
 }
 #qAndA {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 600px;
+  margin-top: 620px;
 }
 /*Styling to give the border shape of the questions and answers*/
 .question {
