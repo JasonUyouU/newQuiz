@@ -1,8 +1,35 @@
+html {
+  overflow: hidden;
+  height: auto;
+}
+body {
+  height: auto;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(350deg);
+  }
+}
+.background {
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/starbg.png");
+  width: 400vw;
+  height: 500vh;
+  top: 50%;
+  left: 50%;
+  margin-top: -200vh;
+  margin-left: -200vw;
+  animation: spin 240s linear infinite;
+}
 #qAndA {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 500px;
+  margin-top: 600px;
 }
 /*Styling to give the border shape of the questions and answers*/
 .question {
@@ -13,8 +40,8 @@
   text-align: auto;
   vertical-align: top;
   background-color: #010e61;
-  border-top: 3px solid #60b8f7;
-  border-bottom: 3px solid #60b8f7;
+  /* border-top: 3px solid #60b8f7;
+  border-bottom: 3px solid #60b8f7; */
   color: white;
   -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
   clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
@@ -31,8 +58,8 @@
   vertical-align: top;
   display: inline-block;
   background-color: #010e61;
-  border-top: 3px solid #60b8f7;
-  border-bottom: 3px solid #60b8f7;
+  /* border-top: 3px solid #60b8f7;
+  border-bottom: 3px solid #60b8f7; */
   color: white;
   text-align: left;
   -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
