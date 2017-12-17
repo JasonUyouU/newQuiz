@@ -34,25 +34,82 @@ body {
   vertical-align: top;
   background-color: #010e61;
   color: white;
-  -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
-  clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+  position: relative;
+}
+.question:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 25px solid #010e61;
+}
+.question:after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 25px solid #010e61;
 }
 .answers {
   width: 80%;
   margin: 30px auto;
 }
 .answer {
-  margin: 10px 10px;
+  margin: 10px 0;
   height: 50px;
   width: 250px;
-  padding-top: 7px;
+  padding-top: 5px;
   vertical-align: top;
   display: inline-block;
   background-color: #010e61;
   color: white;
   text-align: left;
-  -webkit-clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
-  clip-path: polygon(7% 0%, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+  position: relative;
+}
+.answer:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #010e61;
+}
+.answer:after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #010e61;
+}
+.correct {
+  background-color: #ffb344 !important;
+}
+.correct:before {
+  border-right: 25px solid #ffb344 !important;
+}
+.correct:after {
+  border-left: 25px solid #ffb344 !important;
+}
+.correct p {
+  color: black !important;
+}
+.correct span {
+  color: white !important;
 }
 /*Extra div needed so text doesn't overlap the cutoff edges*/
 .inner {
@@ -63,7 +120,7 @@ body {
   padding-left: 15px;
 }
 p {
-  font-size: 13px;
+  font-size: 15px;
 }
 .questionP {
   font-size: 17px;

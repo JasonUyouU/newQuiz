@@ -1,9 +1,11 @@
 //Iteration function of questions 1-4
 $.each([1, 2, 3, 4, 5], function(i) {
   $("#answers" + i + " .answer").click(function() {
-    $("#correct" + i).css("background-color", "#ffb344");
-    $("#correct" + i + " p").css("color", "black");
-    $("#correct" + i + " span").css("color", "white");
+    $("#answers" + i + " .answer:nth-child(" + i + ")").addClass("correct");
+    // $("#correct" + i + ":after").css("background-color", "#ffb344");
+    // $("#correct" + i + ":before").css("background-color", "#ffb344");
+    // $("#correct" + i + " p").css("color", "black");
+    // $("#correct" + i + " span").css("color", "white");
     setTimeout(function(){
       $("#question" + i).addClass("hidden");
       $("#answers" + i).addClass("hidden");
