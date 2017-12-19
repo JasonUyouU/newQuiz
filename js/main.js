@@ -12,14 +12,23 @@ $.each([1, 2, 3, 4, 5], function(i) {
       $("#fighting").removeClass("hidden");
       $("#winning").addClass("hidden");
     }, 2000);
+    $("#prize" + i).addClass("flash bgcolor");
   });
-  $("#answers" + i + " .answer").click(function() {
+  $("#answers" + i + " .answer:not(#correct" + i + ")").click(function() {
     $("#correct" + i).addClass("correct");
     $("#fighting").addClass("hidden");
-    $("#losing").removeClass("hidden")
+    $("#losing").removeClass("hidden");
   });
 });
 //click function for the last question
-$("#answers5 .answer").click(function(){
+$("#correct5").click(function() {
   $("#correct5").addClass("correct");
+  $("#fighting").addClass("hidden");
+  $("#victory").removeClass("hidden");
+  $("#prize5").addClass("flash bgcolor");
 })
+$("#answers5 .answer:not(#correct5)").click(function(){
+  $("#correct5").addClass("correct");
+  $("#fighting").addClass("hidden");
+  $("#losing").removeClass("hidden");
+});
