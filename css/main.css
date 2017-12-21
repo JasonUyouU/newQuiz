@@ -153,19 +153,6 @@ p {
 .hidden {
   display: none !important;
 }
-@media (min-width: 1270px) {
-  #qAndA {
-    width: 60%;
-  }
-}
-@media (min-width: 1700px) {
-  #score {
-    width: 40%;
-  }
-  #qAndA {
-    width: 50%;
-  }
-}
 .flash {
   -moz-animation: flash 2s ease-out;
   -moz-animation-iteration-count: 1;
@@ -239,4 +226,17 @@ p {
   color: #ffb344;}
   100% { background-color: #ffb344;
   color: white;}
+}
+@media (min-width: 1270px) {
+  #qAndA {
+    width: 60%;
+  }
+}
+@media (min-width: 1700px) {
+  #score {
+    width: 35%;
+  }
+  #qAndA {
+    width: 50%;
+  }
 }
