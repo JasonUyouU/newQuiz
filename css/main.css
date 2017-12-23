@@ -32,13 +32,31 @@ body {
 #again {
   width: 300px;
   height: 200px;
-  background-color: pink;
+  background-color: #010e61;
+  border: 2px #187be0 solid;
   position: absolute;
   right: 0;
   left: 0;
   margin: auto;
   margin-top: 150px;
   text-align: center;
+}
+#again h2 {
+  margin-top: 50px;
+  color:#ffb344;
+}
+#again button {
+  margin-top: 25px;
+  background-color: #ffb344;
+  color: #010e61;
+  border: 0;
+  box-shadow: none;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+#again button:hover {
+  border: 1px #187be0 solid;
 }
 #winnings {
   width: 250px;
@@ -106,6 +124,10 @@ body {
   color: white;
   text-align: left;
   position: relative;
+  cursor: pointer;
+}
+.answer:hover {
+  border-bottom: 2px solid #ffb344;
 }
 .answer:before {
   content: "";

@@ -20,6 +20,9 @@ $.each([1, 2, 3, 4, 5], function(i) {
     $("#fighting").addClass("hidden");
     $("#losing").removeClass("hidden");
     $("#sound2").get(0).play();
+    setTimeout(function() {
+      $("#again").removeClass("hidden");
+    }, 2000);
   });
 });
 //click function for the last question
@@ -36,3 +39,6 @@ $("#answers5 .answer:not(#correct5)").click(function(){
   $("#losing").removeClass("hidden");
   $("#sound2").get(0).play();
 });
+$("#againbtn").click(function() {
+  location.reload(true);
+})
