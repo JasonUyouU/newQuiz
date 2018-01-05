@@ -15,7 +15,7 @@ body {
   margin: 20px 0;
 }
 #score {
-  width: 60%;
+  width: 700px;
   height: 500px;
   margin: 0 auto;
 }
@@ -56,7 +56,7 @@ body {
   font-weight: bolder;
 }
 #again button:hover {
-  border: 1px #187be0 solid;
+  border: 2px #187be0 solid;
 }
 #winnings {
   width: 250px;
@@ -71,7 +71,7 @@ body {
 }
 #qAndA {
   text-align: center;
-  width: 80%;
+  width: 800px;
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -259,17 +259,4 @@ p {
   color: #ffb344;}
   100% { background-color: #ffb344;
   color: white;}
-}
-@media (min-width: 1270px) {
-  #qAndA {
-    width: 60%;
-  }
-}
-@media (min-width: 1700px) {
-  #score {
-    width: 35%;
-  }
-  #qAndA {
-    width: 50%;
-  }
 }
